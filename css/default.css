@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font: 11pt Libertinus Sans;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+}
+
+.content {
+  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-rows: 50vh auto;
+  width: 100vw;
+  gap: 20px;
+}
+
+.landing {
+  grid-template-columns: 100vw;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.post {
+  grid-area: 1/2/3/2;
+  align-self: center;
+}
+
+.post img {
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  border-style: solid;
+  border-color: #cfe1b9;
+  border-bottom-width: 10px;
+  border-right-width: 10px;
+}
+
+.desc {
+  border: 1px solid;
+  padding: 20px;
+  text-align: justify;
+  align-self: end;
+  margin: 20px;
+}
+
+.left {
+  border-left-width: 10px;
+  grid-area: 2/1/2/1;
+}
+
+.right {
+  border-right-width: 10px;
+}
+
+header {
+  grid-area: 1/1/1/auto;
+  align-self: center;
+  padding: 0 10vw;
+  background: #fff;
+  z-index: 3;
+}
+
+header .title {
+  font-size: 10em;
+  color: #cfe1b9;
+}
+
+/* header .title:first-letter {
+  font-style: italic;
+} */
+.blurb {
+  width: 70%;
+  margin: 0 auto 0;
+  z-index: 2;
+  position: relative;
+}
+
+.background {
+  grid-area: 2/4/1/auto;
+  z-index: 1;
+  position: relative;
+  background: #cfe1b9;
+}
+
+/*# sourceMappingURL=default.css.map */
