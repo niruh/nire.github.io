@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 .content {
-  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-columns: 30vw 50vw 30vw;
   grid-template-rows: 50vh auto;
   width: 100vw;
   // height: 100vh;
@@ -75,16 +75,34 @@ header .title {
 .background {
   z-index: 1;
   position: absolute;
-  background: $green;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+//  background: $green;
+}
+.mem {
+  z-index: 3;
+  position: relative;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 10vh 0;
+  font-size: 5em;
+  border-top: 1px solid $green;
+  border-bottom: 1px solid $green;
+}
+.cover {
+  background: rgba(255,255,255,0.5);
+  -webkit-filter: blur(25px);
+  position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.mem {
-  z-index: 2;
-  position: relative;
-  width: 50vw;
-  margin: 0 auto;
-  padding: 10vh 0;
-};
+.nav > span .click {
+  background: $green;
+  padding: 10px;
+  color: #fff;
+}

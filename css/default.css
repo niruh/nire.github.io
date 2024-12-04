@@ -9,7 +9,7 @@ body {
 }
 
 .content {
-  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-columns: 30vw 50vw 30vw;
   grid-template-rows: 50vh auto;
   width: 100vw;
   gap: 20px;
@@ -78,7 +78,6 @@ header .title {
 .background {
   z-index: 1;
   position: absolute;
-  background: #cfe1b9;
   top: 0;
   left: 0;
   right: 0;
@@ -86,11 +85,31 @@ header .title {
 }
 
 .mem {
-  z-index: 2;
+  z-index: 3;
   position: relative;
   width: 50vw;
   margin: 0 auto;
   padding: 10vh 0;
+  font-size: 5em;
+  border-top: 1px solid #cfe1b9;
+  border-bottom: 1px solid #cfe1b9;
+}
+
+.cover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-filter: blur(25px);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nav > span .click {
+  background: #cfe1b9;
+  padding: 10px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=default.css.map */
