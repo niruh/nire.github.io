@@ -1,1 +1,2 @@
-structure is finished. add green background layer as a child to blurb.
+# Welcome To My Garden
+see all the flowers i've planted.
