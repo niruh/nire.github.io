@@ -14,7 +14,7 @@ body {
 }
 .content {
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 10vh auto auto;
   width: 100vw;
   // height: 100vh;
   gap: 20px;
@@ -26,12 +26,13 @@ body {
   gap: 20px;
 }
 .post {
-  grid-area: 1 / 2 / 3 / 2;
+  grid-area: 2 / 2 / 3 / 2;
   align-self: center;
 }
 .post img {
   display: block;
-  max-width: 500px;
+  max-height: 80vh;
+  width: auto;
   margin: auto;
   border-style: solid;
   border-color: $green;
@@ -115,7 +116,7 @@ header .title {
   display: block;
 }
 .hdr {
-  grid-area: 1 / 1 / auto / 2;
+  grid-area: 1 / 1 / auto / 3;
   padding: 10px 10vw;
 }
 .hdr .title {
