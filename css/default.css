@@ -9,11 +9,10 @@ body {
 }
 
 .content {
-  grid-template-columns: 30vw 50vw 30vw;
-  grid-template-rows: 50vh auto;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
   width: 100vw;
   gap: 20px;
-  padding: 10vh 0;
 }
 
 .landing {
@@ -59,7 +58,12 @@ header {
   align-self: center;
   padding: 0 10vw;
   background: #fff;
-  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > * {
+  align-self: center;
 }
 
 header .title {
@@ -106,10 +110,26 @@ header .title {
   bottom: 0;
 }
 
-.nav > span .click {
+.nav {
+  width: 10vw;
+  max-width: 100px;
+}
+
+.nav > span {
   background: #cfe1b9;
   padding: 10px;
   color: #fff;
+  display: block;
+}
+
+.hdr {
+  grid-area: 1/1/auto/2;
+  padding: 10px 10vw;
+}
+
+.hdr .title {
+  color: #cfe1b9;
+  font-size: 5em;
 }
 
 /*# sourceMappingURL=default.css.map */
